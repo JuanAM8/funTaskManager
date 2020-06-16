@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/games_virtual_pet_fragment"
+    android:background="@color/paletteBackground">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Taskys"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_titles_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="TODO"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_small_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonMarket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button2_shape"
+        android:text="Mercado"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_normal_buttons_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointsText" />
+
+    <Button
+        android:id="@+id/buttonMinigames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Minijuegos"
+        android:background="@drawable/button2_shape"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_normal_buttons_font_size"
+        app:layout_constraintStart_toEndOf="@+id/buttonMarket"
+        app:layout_constraintTop_toBottomOf="@+id/pointsText" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="414dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMarket">
+
+        <LinearLayout
+            android:id="@+id/virtualPetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/paletteDarkBlue" />
+        </LinearLayout>
+
+        />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/pet_items_layout"
+        android:layout_width="211dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/pet_layout_shape"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_close_items"
+            android:layout_width="54dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_shape"
+            android:text="X"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_small_buttons_font_size"
+            />
+
+        <Button
+            android:id="@+id/button_exp"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Subir Experiencia"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+        <Button
+            android:id="@+id/button_food"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Dar Comida"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+        <Button
+            android:id="@+id/button_clean"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Limpiar"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+        <Button
+            android:id="@+id/button_evo"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Evolucionar"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attachments_layout"
+        android:layout_width="211dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/pet_layout_shape"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_close_attach"
+            android:layout_width="54dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_shape"
+            android:text="X"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_small_buttons_font_size"/>
+
+        <Button
+            android:id="@+id/button_attach_exp"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Cinturón de experiencia"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+        <Button
+            android:id="@+id/button_attach_food"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Cinturón Antihambre"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+        <Button
+            android:id="@+id/button_attach_clean"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Cinturón antisuciedad"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+        <Button
+            android:id="@+id/button_unattach"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8597E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Quitar equipo"
+            android:textColor="@color/paletteDarkBlue"
+            android:textSize="@dimen/text_normal_buttons_font_size" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

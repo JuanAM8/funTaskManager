@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_tasks">
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.testingtfg.ui.task.TasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.testingtfg.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_games"
+        android:name="com.example.testingtfg.ui.games.VirtualPetFragment"
+        android:label="@string/title_games"
+        tools:layout="@layout/fragment_games" />
+
+    <fragment
+        android:id="@+id/navigation_social"
+        android:name="com.example.testingtfg.ui.social.StatsFragment"
+        android:label="@string/title_social"
+        tools:layout="@layout/fragment_social" />
+
+    <fragment
+        android:id="@+id/navigation_configuration"
+        android:name="com.example.testingtfg.ui.configuration.ConfigurationFragment"
+        android:label="@string/title_configuration"
+        tools:layout="@layout/fragment_configuration" />
+
+    <fragment
+        android:id="@+id/navigation_task_editor"
+        android:name="com.example.testingtfg.ui.task.TaskEditorFragment"
+        android:label="@string/title_configuration"
+        tools:layout="@layout/fragment_task_editor" />
+
+</navigation>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/games_market_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paletteBackground">
+
+    <Button
+        android:id="@+id/buttonBackMarket"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:text="@string/games_back_button"
+        android:textSize="@dimen/text_normal_buttons_font_size"
+        android:background="@drawable/button2_shape"
+        android:textColor="@color/paletteDarkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/points_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/text_small_font_size"
+        android:textColor="@color/paletteDarkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="409dp"
+        android:layout_height="566dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points_info">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_pets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Huevos"
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="@dimen/text_titles2_font_size"  />
+
+            <LinearLayout
+                android:id="@+id/marketPetsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_accesories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Objetos"
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="@dimen/text_titles2_font_size"  />
+
+            <LinearLayout
+                android:id="@+id/marketItemsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accesorios"
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="@dimen/text_titles2_font_size"  />
+
+            <LinearLayout
+                android:id="@+id/marketAccesoriesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

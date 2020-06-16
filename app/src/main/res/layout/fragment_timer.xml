@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="302dp"
+    android:layout_height="313dp"
+    android:background="@drawable/pet_layout_shape"
+    android:clickable="true"
+    tools:context=".ui.task.TaskEditorFragment">
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:text="Comenzar"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_big_buttons_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMins" />
+
+    <TextView
+        android:id="@+id/timerTitle"
+        android:layout_width="170dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:text="Concentración"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_big_buttons_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_small_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePickerCountdown" />
+
+    <TextView
+        android:id="@+id/textSecs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_small_font_size"
+        app:layout_constraintStart_toEndOf="@+id/textMins"
+        app:layout_constraintTop_toBottomOf="@+id/timePickerCountdown" />
+
+    <TextView
+        android:id="@+id/textMins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_small_font_size"
+        app:layout_constraintStart_toEndOf="@+id/textHours"
+        app:layout_constraintTop_toBottomOf="@+id/timePickerCountdown" />
+
+    <TimePicker
+        android:id="@+id/timePickerCountdown"
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/paletteDarkBlue"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerTitle"
+        app:layout_constraintVertical_bias="0.227" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

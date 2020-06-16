@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.social.StatsFragment"
+    android:background="@color/paletteBackground">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas"
+        android:textSize="40sp"
+        android:textColor="@color/paletteDarkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/stats_scroll"
+        android:layout_width="411dp"
+        android:layout_height="602dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_tasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tareas"
+                    android:textColor="@color/paletteDarkBlue"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/tweetButton_tasks"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/button2_shape"
+                    android:text="Twittear"
+                    android:textColor="@color/paletteDarkBlue"
+                    android:textSize="@dimen/text_normal_buttons_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/info_tasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/separationBar"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:height="10dp"
+                android:background="@color/paletteDarkBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_pets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taskys"
+                    android:textColor="@color/paletteDarkBlue"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/tweetButton_pets"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/button2_shape"
+                    android:text="Twittear"
+                    android:textColor="@color/paletteDarkBlue"
+                    android:textSize="@dimen/text_normal_buttons_font_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/info_pets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/separationBar2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:height="10dp"
+                android:background="@color/paletteDarkBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minijuegos"
+                    android:textColor="@color/paletteDarkBlue"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/tweetButton_games"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/button2_shape"
+                    android:text="Twittear"
+                    android:textColor="@color/paletteDarkBlue"
+                    android:textSize="@dimen/text_normal_buttons_font_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_mg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoot'Em All"
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/info_mg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/title_mg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catch the Ball"
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/info_mg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/title_mg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find the Coins"
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/info_mg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/paletteDarkBlue"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

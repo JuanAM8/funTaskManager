@@ -1,0 +1,110 @@
+<resources>
+    <!--Titles-->
+    <string name="app_name">Fun Task Manager</string>
+    <string name="todo_message">Disponible próximamente</string>
+    <string name="title_tasks">Tareas</string>
+    <string name="title_calendar">Calendario</string>
+    <string name="title_games">Juegos</string>
+    <string name="title_social">Estadísticas</string>
+    <string name="title_configuration">Configuración</string>
+    <string name="title_task_editor">Editar Tarea</string>
+    <!--Games Fragment-->
+    <string name="shooter_game_title">SHooter</string>
+    <string name="game_over">Fin del juego</string>
+    <string name="score_message">Puntuación:</string>
+    <string name="games_start_button">Jugar</string>
+    <string name="games_back_button">Volver</string>
+    <string name="games_records_button">Récords</string>
+    <string name="games_menu_button">Volver al Menú</string>
+    <!--Virtual Pet Fragment-->
+    <string name="egg_name">Huevo de</string>
+    <string name="creature0_name">Iki</string>
+    <string name="creature1_name">Rillu</string>
+    <string name="creature2_name">Gmui</string>
+    <string name="creature3_name">Kralpin</string>
+    <string name="creature4_name">Gnovarr</string>
+    <string name="creature5_name">Whoola</string>
+    <string name="creature6_name">Feathy</string>
+    <string name="creature7_name">Astrik</string>
+    <string name="medium0_name">Ikey</string>
+    <string name="medium1_name">Rilluar</string>
+    <string name="medium2_name">Gmupra</string>
+    <string name="medium3_name">Kralper</string>
+    <string name="medium4_name">Gnavorr</string>
+    <string name="medium5_name">Whaazli</string>
+    <string name="medium6_name">Feather</string>
+    <string name="medium7_name">Astrilak</string>
+    <string name="ultimate0_name">Ikayu</string>
+    <string name="ultimate1_name">Rilluyok</string>
+    <string name="ultimate2_name">Gmupraex</string>
+    <string name="ultimate3_name">Kralpblast</string>
+    <string name="ultimate4_name">Gnaviross</string>
+    <string name="ultimate5_name">Whaazsline</string>
+    <string name="ultimate6_name">Feathfull</string>
+    <string name="ultimate7_name">Astribald</string>
+    <string name="exp_belt_name">Cinturón de experiencia</string>
+    <string name="food_belt_name">Cinturón antihambre</string>
+    <string name="clean_belt_name">Cinturón antisuciedad</string>
+    <string name="clean_pill_name">Cápsula de limpieza</string>
+    <string name="food_pill_name">Cápsula de comida</string>
+    <string name="exp_pill_name">Cápsula de experiencia</string>
+    <string name="evolution_stone">Roca de evolución</string>
+    <!--Task Fragment-->
+    <string name="button_addTask">Nueva Tarea</string>
+    <string name="button_date">Fecha</string>
+    <string name="task_today">Hoy</string>
+    <string name="task_tomorrow">Mañana</string>
+    <string name="task_thisWeek">Esta semana</string>
+    <string name="task_later">Más tarde</string>
+    <string name="task_late">Atrasadas</string>
+    <!--Task Editor Fragment-->
+    <string name="button_name">Cambiar nombre</string>
+    <string name="button_priority">Cambiar prioridad</string>
+    <string name="button_category">Cambiar categoría</string>
+    <string name="button_pomodoro">Concentración</string>
+    <string name="button_addReminder">Añadir recordatorio</string>
+    <string name="button_addFile">Añadir ficheros</string>
+    <string name="button_addTime">Establecer tiempo estimado</string>
+    <string name="button_addSubTask">Nueva subtarea</string>
+    <string name="button_deleteSubTasks">Eliminar hechas</string>
+    <string name="annotation_message">Añadir anotaciones</string>
+    <string name="date_mark">Fecha: </string>
+    <string name="subtasks_title">Subtareas</string>
+    <string name="annotations_title">Anotaciones</string>
+    <string name="files_title">Archivos adjuntos</string>
+    <string name="estimated_time_title">Tiempo estimado</string>
+    <string name="priority_prompt">Establecer prioridad</string>
+    <string name="date_name">Fecha</string>
+    <string name="estimated_time_setup">Establecer</string>
+    <string-array name="priority_options">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+    <string name="category_prompt">Establecer categoría</string>
+    <string-array name="category_options">
+        <item>Estudios</item>
+        <item>Trabajo</item>
+        <item>Ejercicio</item>
+        <item>Personal</item>
+        <item>Otro</item>
+    </string-array>
+    <string name="time_prompt">Establecer vencimiento</string>
+    <string-array name="time_options">
+        <item>Hoy</item>
+        <item>Mañana</item>
+        <item>Esta semana</item>
+        <item>Más tarde</item>
+    </string-array>
+    <string name="bg_prompt">Escoge fondo</string>
+    <string-array name="bg_options">
+        <item>Fondo 1</item>
+        <item>Fondo 2</item>
+        <item>Fondo 3</item>
+        <item>Fondo 4</item>
+        <item>Fondo 5</item>
+        <item>Fondo 6</item>
+        <item>Fondo 7</item>
+        <item>Fondo 8</item>
+    </string-array>
+</resources>

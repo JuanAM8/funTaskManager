@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/games_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paletteBackground"
+    tools:context=".ui.games.VirtualPetFragment">
+
+    <Button
+        android:id="@+id/buttonBackMiniGames"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:text="@string/games_back_button"
+        android:background="@drawable/button2_shape"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_normal_buttons_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_minigame1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button2_shape"
+        android:text="Minijuego 1"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_big_buttons_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_minigame2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Minijuego 2"
+        android:background="@drawable/button2_shape"
+        android:textColor="@color/paletteDarkBlue"
+        android:textSize="@dimen/text_big_buttons_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_minigame1" />
+
+    <Button
+        android:id="@+id/button_minigame3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button4_shape"
+        android:text="Minijuego 3"
+        android:textColor="@color/paletteSoftBG"
+        android:textSize="@dimen/text_big_buttons_font_size"
+        app:layout_constraintEnd_toEndOf="@+id/game_screen"
+        app:layout_constraintStart_toStartOf="@+id/game_screen"
+        app:layout_constraintTop_toBottomOf="@+id/button_minigame2" />
+
+    <FrameLayout
+        android:id="@+id/game_screen"
+        android:layout_width="410dp"
+        android:layout_height="668dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
